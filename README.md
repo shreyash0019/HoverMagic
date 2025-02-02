@@ -1,6 +1,4 @@
-# Let's create a downloadable `README.md` file for the repository.
 
-readme_content = """
 # HoverMagic
 
 **HoverMagic** is a modern web design project that showcases interactive typography and hover effects. Featuring the **Futura Condensed** font, gradient backgrounds, and smooth animations, this project demonstrates how to create visually engaging designs.
@@ -17,9 +15,6 @@ readme_content = """
 - **HTML5**: For structuring the webpage.
 - **CSS3**: For styling, animations, and hover effects.
 
-## Preview
-
-![Preview Image](image.png)
 
 ## How to Use
 
@@ -41,4 +36,4 @@ License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute it.
 
-Developed by Shreyash Ingle 🚀 ```
+Developed by Shreyash Ingle 🚀
