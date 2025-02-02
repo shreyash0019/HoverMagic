@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Futura Condensed';
+    src: url('https://your-font-url.com/Futura-Condensed.ttf') format('truetype'); /* Replace with your font file URL */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient background */
+  }
+  
+  main {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  h1 {
+    font: 700 6rem 'Futura Condensed', sans-serif; /* Applied Futura Condensed font */
+    cursor: pointer;
+    transition: color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+  }
+  
+  .text {
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  
+  .text:hover {
+    color: #fff; /* Filled text changes to white on hover */
+  }
+  
+  .stroke {
+    position: absolute;
+    top: 0;
+    color: transparent;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: black;
+    transition: -webkit-text-stroke-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .stroke:hover {
+    -webkit-text-stroke-color: white; /* Outline changes to white on hover */
+  }
+  
+  .image {
+    width: 450px; /* Adjusted image size */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.8s, opacity 0.4s 0.2s;
+  }
+  
+  .stroke:hover + .image {
+    opacity: 1;
+    transform: translateX(0) rotate(-15deg); /* Smooth animation */
+  }
+  
